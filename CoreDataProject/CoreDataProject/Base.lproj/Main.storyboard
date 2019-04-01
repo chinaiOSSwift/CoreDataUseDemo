@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-HN-99y">
+                                <rect key="frame" x="10" y="368" width="81.5" height="30"/>
+                                <state key="normal" title="增"/>
+                                <connections>
+                                    <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqV-CX-Odq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ew7-5v-uEn">
+                                <rect key="frame" x="101.5" y="369" width="81" height="30"/>
+                                <state key="normal" title="删"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEM-kM-dGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xi-6c-erl">
+                                <rect key="frame" x="192.5" y="369" width="81.5" height="30"/>
+                                <state key="normal" title="改"/>
+                                <connections>
+                                    <action selector="updateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mko-lm-5fj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHG-ZB-91T">
+                                <rect key="frame" x="284" y="368" width="81" height="30"/>
+                                <state key="normal" title="查"/>
+                                <connections>
+                                    <action selector="findAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCe-7l-mIZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ew7-5v-uEn" firstAttribute="height" secondItem="ufo-HN-99y" secondAttribute="height" id="7cO-an-GNl"/>
+                            <constraint firstItem="yHG-ZB-91T" firstAttribute="width" secondItem="ufo-HN-99y" secondAttribute="width" id="7dj-MK-NqW"/>
+                            <constraint firstItem="3xi-6c-erl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="BH4-GS-yeL"/>
+                            <constraint firstItem="yHG-ZB-91T" firstAttribute="leading" secondItem="3xi-6c-erl" secondAttribute="trailing" constant="10" id="IPz-Uw-oae"/>
+                            <constraint firstItem="ew7-5v-uEn" firstAttribute="leading" secondItem="ufo-HN-99y" secondAttribute="trailing" constant="10" id="IuP-8p-Qt9"/>
+                            <constraint firstItem="ew7-5v-uEn" firstAttribute="width" secondItem="ufo-HN-99y" secondAttribute="width" id="KZ6-Wy-w5I"/>
+                            <constraint firstItem="ufo-HN-99y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="L7U-V1-hGf"/>
+                            <constraint firstItem="ufo-HN-99y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="348" id="Nus-KD-Xzq"/>
+                            <constraint firstItem="ew7-5v-uEn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="SiA-qK-gqS"/>
+                            <constraint firstItem="3xi-6c-erl" firstAttribute="width" secondItem="ufo-HN-99y" secondAttribute="width" id="WCr-IC-o9K"/>
+                            <constraint firstItem="yHG-ZB-91T" firstAttribute="leading" secondItem="3xi-6c-erl" secondAttribute="trailing" constant="10" id="WJo-aR-AEj"/>
+                            <constraint firstItem="3xi-6c-erl" firstAttribute="leading" secondItem="ew7-5v-uEn" secondAttribute="trailing" constant="42" id="ffp-Vs-ssp"/>
+                            <constraint firstItem="yHG-ZB-91T" firstAttribute="height" secondItem="ufo-HN-99y" secondAttribute="height" id="gZi-Mz-Bdp"/>
+                            <constraint firstItem="yHG-ZB-91T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="348" id="jjP-Dt-kPv"/>
+                            <constraint firstItem="ew7-5v-uEn" firstAttribute="leading" secondItem="ufo-HN-99y" secondAttribute="trailing" constant="10" id="lNK-dt-p0Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHG-ZB-91T" secondAttribute="trailing" constant="10" id="qzY-df-0wf"/>
+                            <constraint firstItem="3xi-6c-erl" firstAttribute="leading" secondItem="ew7-5v-uEn" secondAttribute="trailing" constant="10" id="umj-m4-Hrw"/>
+                            <constraint firstItem="3xi-6c-erl" firstAttribute="height" secondItem="ufo-HN-99y" secondAttribute="height" id="zqa-Qi-WK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
